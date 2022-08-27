@@ -117,6 +117,22 @@ return str;
 console.log(reverse(''));                         // ''
 console.log(reverse('abcdef'));                  // 'fedcba'
 
+function reverse2(string) {
+    let reverseStr = [];
+    let str = string.split('');
+    for (let i = str.length - 1; i >= 0; i--) {
+    reverseStr.push(str[i])
+      
+    }
+  return reverseStr.join('');
+  }
+  
+  
+  
+  
+  console.log(reverse2(''));                         // ''
+  console.log(reverse2('abcdef'));                  // 'fedcba'
+
 
 console.log('6. //indexOf - Implement the indexOf function for arrays.')
 
